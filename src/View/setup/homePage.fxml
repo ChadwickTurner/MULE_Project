@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.setup.homePageController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../images/MULETitle.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="newGameArr2" fitHeight="52.0" fitWidth="53.0" layoutX="837.0" layoutY="516.0" onMouseEntered="#mouseEnterNewGame" onMouseExited="#mouseExitNewGame" opacity="0.0" rotate="180.0">
+         <image>
+            <Image url="@../images/triangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="newGameArr1" fitHeight="52.0" fitWidth="53.0" layoutX="290.0" layoutY="521.0" onMouseEntered="#mouseEnterNewGame" onMouseExited="#mouseExitNewGame" opacity="0.0">
+         <image>
+            <Image url="@../images/triangle.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="297.0" layoutY="588.0" mnemonicParsing="false" onAction="#continueGame" onMouseEntered="#mouseEnterContGame" onMouseExited="#mouseExitContGame" opacity="0.0" prefHeight="80.0" prefWidth="593.0" style="-fx-background-color: #ffffff;" text="Continue Game" textAlignment="CENTER" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="OCR A Extended" size="1.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="contGameArr2" fitHeight="52.0" fitWidth="53.0" layoutX="837.0" layoutY="597.0" onMouseEntered="#mouseEnterContGame" onMouseExited="#mouseExitContGame" opacity="0.0" rotate="180.0">
+         <image>
+            <Image url="@../images/triangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="contGameArr1" fitHeight="52.0" fitWidth="53.0" layoutX="290.0" layoutY="602.0" onMouseEntered="#mouseEnterContGame" onMouseExited="#mouseExitContGame" opacity="0.0">
+         <image>
+            <Image url="@../images/triangle.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="297.0" layoutY="496.0" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnterNewGame" onMouseExited="#mouseExitNewGame" opacity="0.0" prefHeight="86.0" prefWidth="593.0" style="-fx-background-color: #000000;" text="New Game" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="OCR A Extended" size="1.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

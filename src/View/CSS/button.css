@@ -1,0 +1,6 @@
+.button {
+    -fx-background-color: #006577; /* blue */
+    -fx-effect: dropshadow(gaussian, rgba(0,255,0,0.8), 15,0.8,0,0 );
+    -fx-text-fill: #ffffff; /* white */
+    -fx-font: 32px "OCR A Extended";
+}

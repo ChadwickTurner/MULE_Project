@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.map.mapDisplayController">
+   <children>
+      <ImageView fitHeight="825.0" fitWidth="950.0">
+         <image>
+            <Image url="@../images/Borders/gameBorder.png" />
+         </image>
+      </ImageView>
+      <GridPane id="mapGridCSS" fx:id="mapGrid" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" translateX="65.0" translateY="65.0">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <ImageView fitHeight="120.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Group fx:id="storeStatusDisplay" layoutX="795.0" layoutY="695.0">
+         <children>
+            <Label layoutX="25.0" layoutY="22.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="38.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="54.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="70.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="86.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/food.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="6.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/energy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="11.0" fitWidth="14.0" layoutX="3.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/smithore.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/crystite.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/mule.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="3.0" text="Store" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group>
+         <children>
+            <Label fx:id="stateDisplay" layoutX="60.0" layoutY="20.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="playerBannerDisplay" layoutX="390.0" layoutY="20.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="playerDisplay" layoutX="60.0" layoutY="699.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="playerIconDisplay" fitHeight="97.0" fitWidth="74.0" layoutX="152.0" layoutY="711.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="foodDisplay" layoutX="260.0" layoutY="700.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="energyDisplay" layoutX="260.0" layoutY="727.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="smithoreDisplay" layoutX="260.0" layoutY="752.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="crystiteDisplay" layoutX="260.0" layoutY="778.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="timerDisplay" layoutX="893.0" layoutY="283.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="playerMoneyDisplay" layoutX="60.0" layoutY="724.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="14.0" fitWidth="18.0" layoutX="237.0" layoutY="754.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/smithore.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="15.0" layoutX="238.0" layoutY="700.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/food.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="9.0" layoutX="241.0" layoutY="725.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/energy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="237.0" layoutY="775.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/crystite.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="playerStatusDisplays" layoutX="500.0" layoutY="708.0">
+         <children>
+            <Group layoutX="-116.0" layoutY="-13.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="22.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="38.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="54.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="70.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="86.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/food.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="12.0" fitWidth="6.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/energy.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="11.0" fitWidth="14.0" layoutX="3.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/smithore.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/crystite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="-20.0" layoutY="-13.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="22.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="38.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="54.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="70.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="86.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/food.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="12.0" fitWidth="6.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/energy.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="11.0" fitWidth="14.0" layoutX="3.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/smithore.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/crystite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="76.0" layoutY="-13.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="22.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="38.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="54.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="70.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="86.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/food.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="12.0" fitWidth="6.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/energy.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="11.0" fitWidth="14.0" layoutX="3.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/smithore.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/crystite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="172.0" layoutY="-13.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="22.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="38.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="54.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="70.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="86.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/food.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="12.0" fitWidth="6.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/energy.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="11.0" fitWidth="14.0" layoutX="3.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/smithore.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/crystite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Button fx:id="saveButton" layoutX="789.0" layoutY="12.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#save" prefHeight="50.0" prefWidth="125.0" stylesheets="@../CSS/button.css" text="Save" />
+   </children>
+</AnchorPane>

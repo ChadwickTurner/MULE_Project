@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="mapAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.town.TownDisplayController">
+   <children>
+      <Group fx:id="smithoreUnit">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="312.0" layoutX="251.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="271.0" layoutY="196.0" prefHeight="86.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="Would you like to purchase Smithore?" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </Group>
+      <Group fx:id="crystiteUnit" layoutX="1.0" layoutY="1.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="312.0" layoutX="251.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="271.0" layoutY="196.0" prefHeight="86.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="Would you like to purchase Crystite?" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </Group>
+      <Group fx:id="smithoreUpgrade">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="407.0" layoutX="251.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="273.0" layoutY="176.0" prefHeight="112.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="Would you like to purchase Smithore or upgrade your M.U.L.E.?" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="278.0" layoutY="482.0" prefHeight="63.0" prefWidth="120.0" stylesheets="@../CSS/store_label.css" text="UpgradeCost:" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="417.0" layoutY="500.0" stylesheets="@../CSS/store_label.css" text="\$75" />
+            <Button layoutX="500.0" layoutY="486.0" mnemonicParsing="false" onAction="#upgradeSmithore" prefHeight="57.0" prefWidth="183.0" stylesheets="@../CSS/button.css" text="Upgrade" />
+         </children>
+      </Group>
+      <Group fx:id="muleUnit" layoutX="10.0" layoutY="-106.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="558.0" layoutX="251.0" layoutY="229.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="271.0" layoutY="246.0" prefHeight="86.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="Which type of M.U.L.E. would you like to purchase?" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="518.0" layoutY="362.0" stylesheets="@../CSS/store_label.css" text="Cost:" />
+            <Label layoutX="608.0" layoutY="362.0" stylesheets="@../CSS/store_label.css" text="\$125" />
+            <Button layoutX="394.0" layoutY="711.0" mnemonicParsing="false" onAction="#cancelMule" prefHeight="57.0" prefWidth="162.0" stylesheets="@../CSS/button.css" text="Cancel" />
+            <Button layoutX="265.0" layoutY="530.0" mnemonicParsing="false" onAction="#buyMule" prefHeight="57.0" prefWidth="204.0" stylesheets="@../CSS/button.css" text="Smithore" />
+            <Button layoutX="265.0" layoutY="350.0" mnemonicParsing="false" onAction="#buyMule" prefHeight="57.0" prefWidth="204.0" stylesheets="@../CSS/button.css" text="Food" />
+            <Button layoutX="265.0" layoutY="440.0" mnemonicParsing="false" onAction="#buyMule" prefHeight="57.0" prefWidth="204.0" stylesheets="@../CSS/button.css" text="Energy" />
+            <Label layoutX="518.0" layoutY="455.0" stylesheets="@../CSS/store_label.css" text="Cost:" />
+            <Label layoutX="608.0" layoutY="455.0" stylesheets="@../CSS/store_label.css" text="\$150" />
+            <Label layoutX="518.0" layoutY="545.0" stylesheets="@../CSS/store_label.css" text="Cost:" />
+            <Label layoutX="608.0" layoutY="545.0" stylesheets="@../CSS/store_label.css" text="\$175" />
+            <Button layoutX="265.0" layoutY="619.0" mnemonicParsing="false" onAction="#buyMule" prefHeight="57.0" prefWidth="204.0" stylesheets="@../CSS/button.css" text="Crystite" />
+            <Label layoutX="518.0" layoutY="634.0" stylesheets="@../CSS/store_label.css" text="Cost:" />
+            <Label layoutX="608.0" layoutY="634.0" stylesheets="@../CSS/store_label.css" text="\$200" />
+         </children>
+      </Group>
+      <Group fx:id="muleUnitFail" layoutX="10.0" layoutY="10.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="227.0" layoutX="251.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="271.0" layoutY="226.0" prefHeight="86.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="You cannot have more than one M.U.L.E. at a time." textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="415.0" layoutY="341.0" mnemonicParsing="false" onAction="#cancelMule" prefWidth="120.0" stylesheets="@../CSS/button.css" text="Ok" />
+         </children>
+      </Group>
+      <Group fx:id="purchaseFail" layoutX="20.0" layoutY="20.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="227.0" layoutX="251.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="271.0" layoutY="226.0" prefHeight="116.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="You did not have enough money to make that purchase. The transaction did not go through." textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="415.0" layoutY="361.0" mnemonicParsing="false" onAction="#removePopup" prefWidth="120.0" stylesheets="@../CSS/button.css" text="Ok" />
+         </children>
+      </Group>
+      <Group fx:id="buySellLayout">
+         <children>
+            <Group layoutY="-48.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="301.0" layoutY="395.0" rotate="90.0">
+                     <image>
+                        <Image url="@../images/triangle.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="304.0" layoutY="336.0" rotate="270.0">
+                     <image>
+                        <Image url="@../images/triangle.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="unitCost" layoutX="453.0" layoutY="366.0" stylesheets="@../CSS/store_label.css" text="\$0" />
+                  <Button layoutX="304.0" layoutY="337.0" mnemonicParsing="false" onAction="#incrementBuyCounter" opacity="0.0" prefHeight="30.0" prefWidth="30.0" />
+                  <Label fx:id="unitBuyAmount" layoutX="311.0" layoutY="366.0" stylesheets="@../CSS/store_label.css" text="0" />
+                  <Button layoutX="304.0" layoutY="394.0" mnemonicParsing="false" onAction="#decrementBuyCounter" opacity="0.0" prefHeight="30.0" prefWidth="30.0" />
+                  <Button layoutX="529.0" layoutY="352.0" mnemonicParsing="false" onAction="#buy" prefHeight="57.0" prefWidth="125.0" stylesheets="@../CSS/button.css" text="Buy" />
+                  <Label layoutX="369.0" layoutY="366.0" stylesheets="@../CSS/store_label.css" text="Cost:" />
+               </children>
+            </Group>
+            <Group layoutY="-60.0">
+               <children>
+                  <Label layoutX="354.0" layoutY="472.0" stylesheets="@../CSS/store_label.css" text="Value:" />
+                  <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="301.0" layoutY="500.0" rotate="90.0">
+                     <image>
+                        <Image url="@../images/triangle.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="304.0" layoutY="442.0" rotate="270.0">
+                     <image>
+                        <Image url="@../images/triangle.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="303.0" layoutY="500.0" mnemonicParsing="false" onAction="#decrementSellCounter" opacity="0.0" prefHeight="30.0" prefWidth="30.0" />
+                  <Label fx:id="unitSellAmount" layoutX="311.0" layoutY="472.0" stylesheets="@../CSS/store_label.css" text="0" />
+                  <Button layoutX="303.0" layoutY="441.0" mnemonicParsing="false" onAction="#incrementSellCounter" opacity="0.0" prefHeight="30.0" prefWidth="30.0" />
+                  <Label fx:id="unitValue" layoutX="453.0" layoutY="472.0" stylesheets="@../CSS/store_label.css" text="\$0" />
+                  <Button layoutX="529.0" layoutY="458.0" mnemonicParsing="false" onAction="#sell" prefHeight="57.0" prefWidth="125.0" stylesheets="@../CSS/button.css" text="Sell" />
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Group fx:id="foodUnit">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="312.0" layoutX="251.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="271.0" layoutY="196.0" prefHeight="86.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="Would you like to purchase Food?" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </Group>
+      <Group fx:id="energyUpgrade">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="407.0" layoutX="251.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="273.0" layoutY="176.0" prefHeight="112.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="Would you like to purchase Energy or upgrade your M.U.L.E.?" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="278.0" layoutY="482.0" prefHeight="63.0" prefWidth="120.0" stylesheets="@../CSS/store_label.css" text="UpgradeCost:" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="417.0" layoutY="500.0" stylesheets="@../CSS/store_label.css" text="\$50" />
+            <Button layoutX="500.0" layoutY="486.0" mnemonicParsing="false" onAction="#upgradeEnergy" prefHeight="57.0" prefWidth="183.0" stylesheets="@../CSS/button.css" text="Upgrade" />
+         </children>
+      </Group>
+      <Group fx:id="foodUpgrade">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="407.0" layoutX="251.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="273.0" layoutY="176.0" prefHeight="112.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="Would you like to purchase Food or upgrade your M.U.L.E.?" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="278.0" layoutY="482.0" prefHeight="63.0" prefWidth="120.0" stylesheets="@../CSS/store_label.css" text="UpgradeCost:" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="417.0" layoutY="500.0" stylesheets="@../CSS/store_label.css" text="\$25" />
+            <Button layoutX="500.0" layoutY="486.0" mnemonicParsing="false" onAction="#upgradeFood" prefHeight="57.0" prefWidth="183.0" stylesheets="@../CSS/button.css" text="Upgrade" />
+         </children>
+      </Group>
+      <Group fx:id="muleUnit1">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="264.0" layoutX="251.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="271.0" layoutY="226.0" prefHeight="86.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="Would you like to purchase a M.U.L.E.?" textAlignment="CENTER" wrapText="true" />
+            <Label layoutX="400.0" layoutY="313.0" stylesheets="@../CSS/store_label.css" text="Cost:" />
+            <Label layoutX="484.0" layoutY="313.0" stylesheets="@../CSS/store_label.css" text="\$100" />
+            <Button layoutX="319.0" layoutY="384.0" mnemonicParsing="false" onAction="#buyMule" prefWidth="120.0" stylesheets="@../CSS/button.css" text="Yes" />
+            <Button layoutX="509.0" layoutY="384.0" mnemonicParsing="false" onAction="#cancelMule" prefWidth="120.0" stylesheets="@../CSS/button.css" text="No" />
+         </children>
+      </Group>
+      <Group fx:id="energyUnit">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#314043" height="312.0" layoutX="251.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="448.0">
+               <effect>
+                  <DropShadow color="LIME" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="271.0" layoutY="196.0" prefHeight="86.0" prefWidth="402.0" stylesheets="@../CSS/store_label.css" text="Would you like to purchase Energy?" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </Group>
+      <ImageView fitHeight="825.0" fitWidth="950.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Borders/gameBorder.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="75.0" layoutY="75.0">
+         <image>
+            <Image url="@../images/Town/town.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerSprite" fitHeight="56.0" fitWidth="56.0" layoutX="447.0" layoutY="610.0">
+         <image>
+            <Image url="@../images/Sprites/Humanoid/white.png" />
+         </image>
+      </ImageView>
+      <Group fx:id="storeStatusDisplay" layoutX="795.0" layoutY="695.0">
+         <children>
+            <Label layoutX="25.0" layoutY="22.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="38.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="54.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="70.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="86.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/food.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="6.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/energy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="11.0" fitWidth="14.0" layoutX="3.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/smithore.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/crystite.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/mule.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="3.0" text="Store" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group>
+         <children>
+            <Label fx:id="stateDisplay" layoutX="60.0" layoutY="20.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="playerBannerDisplay" layoutX="390.0" layoutY="20.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="playerDisplay" layoutX="60.0" layoutY="699.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="playerIconDisplay" fitHeight="97.0" fitWidth="74.0" layoutX="152.0" layoutY="711.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="foodDisplay" layoutX="260.0" layoutY="700.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="energyDisplay" layoutX="260.0" layoutY="727.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="smithoreDisplay" layoutX="260.0" layoutY="752.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="crystiteDisplay" layoutX="260.0" layoutY="778.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="timerDisplay" layoutX="893.0" layoutY="283.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="playerMoneyDisplay" layoutX="60.0" layoutY="724.0" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="14.0" fitWidth="18.0" layoutX="237.0" layoutY="754.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/smithore.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="15.0" layoutX="238.0" layoutY="700.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/food.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="9.0" layoutX="241.0" layoutY="725.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/energy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="237.0" layoutY="775.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Symbols/crystite.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="playerStatusDisplays" layoutX="500.0" layoutY="708.0">
+         <children>
+            <Group layoutX="-116.0" layoutY="-13.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="22.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="38.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="54.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="70.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="86.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/food.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="12.0" fitWidth="6.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/energy.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="11.0" fitWidth="14.0" layoutX="3.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/smithore.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/crystite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="-20.0" layoutY="-13.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="22.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="38.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="54.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="70.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="86.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/food.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="12.0" fitWidth="6.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/energy.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="11.0" fitWidth="14.0" layoutX="3.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/smithore.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/crystite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="76.0" layoutY="-13.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="22.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="38.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="54.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="70.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="86.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/food.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="12.0" fitWidth="6.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/energy.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="11.0" fitWidth="14.0" layoutX="3.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/smithore.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/crystite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="172.0" layoutY="-13.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="22.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="38.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="54.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="70.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="86.0" textFill="WHITE">
+                     <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="14.0" fitWidth="10.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/food.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="12.0" fitWidth="6.0" layoutX="6.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/energy.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="11.0" fitWidth="14.0" layoutX="3.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/smithore.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Symbols/crystite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

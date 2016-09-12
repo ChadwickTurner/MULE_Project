@@ -1,0 +1,28 @@
+.choice-box {
+	-fx-background-color: #006577;
+	-fx-effect: dropshadow(gaussian, rgba(0,255,0,0.8), 15,0.8,0,0 );
+}
+
+.choice-box:focused {
+	-fx-effect: dropshadow(gaussian, rgba(0,255,0,0.8), 25,0.8,0,0 );
+}
+
+.choice-box .label {
+	-fx-text-fill: white;
+	-fx-font: 32px "OCR A Extended";
+}
+
+.choice-box .context-menu {
+	-fx-background-color: #006577;
+	-fx-effect: dropshadow(gaussian, rgba(0,255,0,0.8), 15,0.8,0,0 );
+	-fx-padding: 10;
+}
+
+.choice-box .tooltip {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+}
+
+.menu-item:focused{
+	-fx-background-color: #00cc00;
+}

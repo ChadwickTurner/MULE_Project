@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.setup.configPageController">
+    <children>
+      <Rectangle fx:id="buttonBlur" arcHeight="5.0" arcWidth="5.0" height="65.0" layoutX="844.0" layoutY="397.0" stroke="BLACK" strokeType="INSIDE" width="244.0" />
+      <ImageView fitHeight="800.0" fitWidth="1200.0" layoutY="-4.0">
+         <image>
+            <Image url="@../images/genericBackground.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="326.0" layoutX="71.0" layoutY="161.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="1045.0" /><Label layoutX="14.0" layoutY="14.0" prefHeight="108.0" prefWidth="237.0" stylesheets="@../CSS/mule_label.css" text=" M.U.L.E." textAlignment="CENTER" />
+      <Label layoutX="372.0" layoutY="50.0" stylesheets="@../CSS/text_label.css" text="Game Settings" underline="true" />
+      <Label layoutX="350.0" layoutY="254.0" prefHeight="116.0" prefWidth="409.0" stylesheets="@../CSS/text_label.css" text="Difficulty:" />
+      <Label layoutX="422.0" layoutY="143.0" prefHeight="116.0" prefWidth="339.0" stylesheets="@../CSS/text_label.css" text="Map Type:" />
+      <Label layoutX="97.0" layoutY="370.0" prefHeight="116.0" prefWidth="661.0" stylesheets="@../CSS/text_label.css" text="Number of Players:" />
+      <Label fx:id="numPlayers" layoutX="779.0" layoutY="396.0" prefHeight="52.0" prefWidth="32.0" stylesheets="@../CSS/text_label.css" text="0" textFill="#2e07e0" />
+      <ChoiceBox fx:id="diffLevel" layoutX="790.0" layoutY="284.0" prefHeight="51.0" prefWidth="300.0" stylesheets="@../CSS/choice-box.css" />
+      <ChoiceBox fx:id="mapType" layoutX="790.0" layoutY="173.0" prefHeight="51.0" prefWidth="300.0" stylesheets="@../CSS/choice-box.css" />
+      <Button layoutX="466.0" layoutY="576.0" mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="116.0" prefWidth="269.0" stylesheets="@../CSS/button.css" text="Save Settings" textAlignment="CENTER" wrapText="true">
+      </Button>
+      <Button fx:id="addPlayerButton" layoutX="844.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="63.0" prefWidth="244.0" stylesheets="@../CSS/button.css" text="Add Player" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <effect>
+            <DropShadow color="LIME" spread="0.66" />
+         </effect>
+      </Button>
+      <Rectangle fx:id="player1Rect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="253.0" layoutX="16.0" layoutY="509.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="199.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00ff00cc" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+         </effect>
+      </Rectangle>
+      <Rectangle fx:id="player2Rect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="253.0" layoutX="238.0" layoutY="508.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="199.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00ff00cc" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+         </effect>
+      </Rectangle>
+      <Rectangle fx:id="player3Rect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="253.0" layoutX="764.0" layoutY="509.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="199.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00ff00cc" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+         </effect>
+      </Rectangle>
+      <Rectangle fx:id="player4Rect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="253.0" layoutX="986.0" layoutY="509.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="199.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00ff00cc" height="30.0" radius="14.5" spread="0.8" width="30.0" />
+         </effect>
+      </Rectangle>
+      <Label fx:id="player1Name" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="516.0" opacity="0.0" prefHeight="37.0" prefWidth="191.0" stylesheets="@../CSS/playerLabel.css" text="Player 1" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="player1Race" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="716.0" opacity="0.0" prefHeight="37.0" prefWidth="191.0" stylesheets="@../CSS/playerLabel.css" text="P1 Race" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="player2Name" alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="516.0" opacity="0.0" prefHeight="37.0" prefWidth="191.0" stylesheets="@../CSS/playerLabel.css" text="Player 2" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="player2Race" alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="716.0" opacity="0.0" prefHeight="37.0" prefWidth="191.0" stylesheets="@../CSS/playerLabel.css" text="P2 Race" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="player3Name" alignment="CENTER" contentDisplay="CENTER" layoutX="768.0" layoutY="516.0" opacity="0.0" prefHeight="37.0" prefWidth="191.0" stylesheets="@../CSS/playerLabel.css" text="Player 3" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="player3Race" alignment="CENTER" contentDisplay="CENTER" layoutX="768.0" layoutY="716.0" opacity="0.0" prefHeight="37.0" prefWidth="191.0" stylesheets="@../CSS/playerLabel.css" text="P3 Race" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="player4Name" alignment="CENTER" contentDisplay="CENTER" layoutX="990.0" layoutY="516.0" opacity="0.0" prefHeight="37.0" prefWidth="191.0" stylesheets="@../CSS/playerLabel.css" text="Player 4" textAlignment="CENTER" textOverrun="CLIP" />
+      <Label fx:id="player4Race" alignment="CENTER" contentDisplay="CENTER" layoutX="990.0" layoutY="716.0" opacity="0.0" prefHeight="37.0" prefWidth="191.0" stylesheets="@../CSS/playerLabel.css" text="P4 Race" textAlignment="CENTER" textOverrun="CLIP" />
+      <ImageView fx:id="player1Sprite" fitHeight="150.0" fitWidth="200.0" layoutX="41.0" layoutY="559.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Sprites/Humanoid/white.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player2Sprite" fitHeight="150.0" fitWidth="200.0" layoutX="263.0" layoutY="559.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Sprites/Humanoid/white.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player3Sprite" fitHeight="150.0" fitWidth="200.0" layoutX="789.0" layoutY="559.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Sprites/Humanoid/white.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player4Sprite" fitHeight="150.0" fitWidth="200.0" layoutX="1011.0" layoutY="559.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Sprites/Humanoid/white.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
